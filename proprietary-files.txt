@@ -466,7 +466,6 @@ vendor/etc/vintf/manifest/manifest_identity_credential.xml
 vendor/lib64/libqtiidentitycredential.so
 
 # Kernel
-vendor/bin/init.kernel.init_boot-memory.sh
 vendor/bin/init.kernel.post_boot-kera.sh
 vendor/bin/init.kernel.post_boot-kera_2_3_1.sh
 vendor/bin/init.kernel.post_boot-kera_2_4_0.sh
@@ -546,11 +545,6 @@ vendor/lib64/qti.video.utils.videobufferlayout.so
 vendor/lib64/vendor.qti.hardware.qconfig-V1-ndk.so
 
 # Memory
-vendor/bin/hw/vendor.qti.memory.pasrmanager-service
-vendor/etc/init/vendor.qti.memory.pasrmanager-service.rc
-vendor/etc/vintf/manifest/vendor.qti.memory.pasrmanager-service.xml
-vendor/lib64/hw/vendor.qti.memory.pasrmanager-impl.so
-vendor/lib64/libpasrutils.so
 vendor/lib64/vendor.qti.memory.pasrmanager-V1-ndk.so
 
 # Native public libraries
