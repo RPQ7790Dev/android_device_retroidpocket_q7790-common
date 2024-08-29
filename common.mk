@@ -52,6 +52,7 @@ PRODUCT_PACKAGES += \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libsoundtriggerhal.qti \
+    libtinyxml2-v34 \
     libvolumelistener \
     qti-audio-types-aidl-V1-ndk \
     qtiaudiohalvendorextn
