@@ -43,28 +43,15 @@ blob_fixups: blob_fixups_user_type = {
     'system_ext/lib64/libwfdnative.so': blob_fixup()
         .add_needed('libinput_shim.so'),
     (
-        'vendor/bin/poweropt-service',
         'vendor/lib64/hw/libaudioeffecthal.qti.so',
         'vendor/lib64/soundfx/libquasar.so',
-        'vendor/lib64/libaodoptfeature.so',
-        'vendor/lib64/libapengine.so',
-        'vendor/lib64/libcamerapoweroptfeature.so',
-        'vendor/lib64/liblearningmodule.so',
-        'vendor/lib64/libgamepoweroptfeature.so',
-        'vendor/lib64/libpowercore.so',
-        'vendor/lib64/liboffscreenpoweroptfeature.so',
-        'vendor/lib64/libpsmoptfeature.so',
-        'vendor/lib64/libstandbyfeature.so',
-        'vendor/lib64/libvideooptfeature.so',
     ): blob_fixup()
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
     'vendor/etc/media_codecs_kera_v2.xml': blob_fixup()
         .regex_replace('.*media_codecs_(google_audio|google_c2|google_telephony|google_video|vendor_audio).*\n', ''),
     'vendor/etc/perf/perfconfigstore.xml': blob_fixup()
         .regex_replace(r'(Name="vendor\.debug\.enable\.memperfd"\s+Value=")true"', r'\1false"'),
-    (
-        'vendor/lib64/soundfx/libbundleaidl.so',
-    ): blob_fixup()
+    'vendor/lib64/soundfx/libbundleaidl.so': blob_fixup()
         .replace_needed('libaudio_aidl_conversion_common_ndk.so', 'libaudio_aidl_conversion_common_ndk_prebuilt.so'),
     'vendor/lib64/android.hardware.bluetooth.audio-impl_prebuilt.so': blob_fixup()
         .replace_needed('libbluetooth_audio_session_aidl.so', 'libbluetooth_audio_session_aidl_prebuilt.so'),
@@ -74,10 +61,7 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/liblistensoundmodel2vendor.so',
     ): blob_fixup()
         .replace_needed('libtensorflowlite_c.so', 'libtensorflowlite_c_vendor.so'),
-    (
-        'vendor/lib64/libapengine.so',
-        'vendor/lib64/libqti-perfd.so',
-    ): blob_fixup()
+    'vendor/lib64/libqti-perfd.so': blob_fixup()
         .replace_needed('vendor.qti.hardware.display.config-V5-ndk.so', 'vendor.qti.hardware.display.config-V12-ndk.so'),
     'vendor/lib64/libaudioserviceexampleimpl.so': blob_fixup()
         .add_needed('libaudioutils_shim.so')
