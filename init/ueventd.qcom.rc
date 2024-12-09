@@ -607,3 +607,6 @@ subsystem mem_buf_vm
 
 # IPA Events
 /dev/ipa_events         0660   radio      radio
+
+# Battery
+/sys/class/qcom-battery  charging_enabled  0660  system  system
