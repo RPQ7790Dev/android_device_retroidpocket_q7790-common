@@ -10,6 +10,9 @@ PRODUCT_GMS_CLIENTID_BASE := android-uct
 PRODUCT_COPY_FILES += \
     kernel/retroidpocket/q7790/modules.systemdlkm_blocklist.msm.kera-le:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/system_dlkm.modules.blocklist
 
+# Partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
 # Product characteristics
 PRODUCT_CHARACTERISTICS := device
 
