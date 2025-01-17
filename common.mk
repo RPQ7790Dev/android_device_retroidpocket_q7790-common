@@ -82,6 +82,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/tablet_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/tablet_core_hardware.xml
 
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health-service.qti
+
 # Init
 PRODUCT_PACKAGES += \
     fstab.default \
