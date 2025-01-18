@@ -206,6 +206,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.memtrack-service
 
 # Overlays
+$(call inherit-product, hardware/ayn/overlay/lineage/lineage.mk)
 $(call inherit-product, hardware/ayn/overlay/qssi/qssi.mk)
 
 # Partitions
