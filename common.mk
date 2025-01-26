@@ -145,6 +145,10 @@ PRODUCT_SOONG_NAMESPACES += \
 # Storage
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
+# Thermal
+PRODUCT_PACKAGES += \
+    android.hardware.thermal-service.qti
+
 # Update engine
 PRODUCT_PACKAGES += \
     update_engine \
