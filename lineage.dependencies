@@ -1,0 +1,18 @@
+[
+  {
+    "repository": "android_kernel_retroidpocket_q7790",
+    "target_path": "kernel/retroidpocket/q7790"
+  },
+  {
+    "repository": "android_kernel_retroidpocket_q7790-devicetrees",
+    "target_path": "kernel/retroidpocket/q7790-devicetrees"
+  },
+  {
+    "repository": "android_kernel_retroidpocket_q7790-modules",
+    "target_path": "kernel/retroidpocket/q7790-modules"
+  },
+  {
+    "repository": "android_kernel_ayn_common-modules",
+    "target_path": "kernel/ayn/common-modules"
+  }
+]
