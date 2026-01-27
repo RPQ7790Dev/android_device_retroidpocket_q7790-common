@@ -205,6 +205,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.memtrack-service
 
+# Overlays
+$(call inherit-product, hardware/ayn/overlay/qssi/qssi.mk)
+
 # Partitions
 PRODUCT_PACKAGES += \
     vendor_bt_firmware_mountpoint \

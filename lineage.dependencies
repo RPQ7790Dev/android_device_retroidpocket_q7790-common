@@ -1,5 +1,9 @@
 [
   {
+    "repository": "android_hardware_ayn",
+    "target_path": "hardware/ayn"
+  },
+  {
     "repository": "android_kernel_retroidpocket_q7790",
     "target_path": "kernel/retroidpocket/q7790"
   },
