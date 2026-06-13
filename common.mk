@@ -154,6 +154,10 @@ PRODUCT_PACKAGES += \
 # Enforce generic ramdisk allow list
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
 
+# Fingerprint
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    BuildFingerprint=Razer/Nicole/Razer-Edge-WiFi:12/SKQ1.211103.001/172:user/release-keys
+
 # GMS
 PRODUCT_GMS_CLIENTID_BASE := android-uct
 
