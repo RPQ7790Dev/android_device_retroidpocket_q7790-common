@@ -60,6 +60,8 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
     'vendor/etc/media_codecs_kera_v2.xml': blob_fixup()
         .regex_replace('.*media_codecs_(google_audio|google_c2|google_telephony|google_video|vendor_audio).*\n', ''),
+    'vendor/etc/perf/perfconfigstore.xml': blob_fixup()
+        .regex_replace(r'(Name="vendor\.debug\.enable\.memperfd"\s+Value=")true"', r'\1false"'),
     (
         'vendor/lib64/soundfx/libbundleaidl.so',
     ): blob_fixup()
