@@ -651,6 +651,18 @@ vendor/lib64/libqrtr.so
 vendor/lib64/libqsocket.so
 vendor/lib64/libsmemlog.so
 
+# QMS
+vendor/bin/qms
+vendor/etc/init/qms.rc
+vendor/etc/seccomp_policy/qms.policy
+vendor/etc/vintf/manifest/qms-saidl.xml
+vendor/lib64/libqms.so
+vendor/lib64/libqms_client.so
+vendor/lib64/libqms_optimized_route_mgr_sdk.so
+vendor/lib64/libqms_packetstats_sdk.so
+vendor/lib64/libqms_sdf_sdk.so
+vendor/lib64/libshsc.so
+
 # QSPA
 system_ext/etc/init/qspa_system.rc
 system_ext/etc/qspa/qspa_default.rc
