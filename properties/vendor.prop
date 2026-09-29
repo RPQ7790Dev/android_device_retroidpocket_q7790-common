@@ -72,6 +72,9 @@ persist.vendor.qcom.bluetooth.lossless_aptx_adaptive_le.enabled=true
 ro.bluetooth.a2dp_offload.supported=true
 ro.vendor.bt.bdaddr_path=/mnt/vendor/persist/quec_bt_mac
 
+# CDSP
+vendor.fastrpc.disable.cdsprpcd.daemon=1
+
 # Chipset
 ro.soc.manufacturer=QTI
 
