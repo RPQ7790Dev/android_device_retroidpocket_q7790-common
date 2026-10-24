@@ -64,6 +64,9 @@ import /vendor/etc/init/hw/init.qti.kernel.rc
 on early-init
     write /proc/sys/kernel/printk_devkmsg ratelimited
     export MEMTAG_OPTIONS off
+    write /sys/class/leds/red/brightness 255
+    write /sys/class/leds/green/brightness 0
+    write /sys/class/leds/blue/brightness 0
 
 on init
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
@@ -71,6 +74,9 @@ on init
     chown system system /sys/devices/platform/soc/1d84000.ufshc/auto_hibern8
     chmod 0660 /sys/devices/platform/soc/1d84000.ufshc/auto_hibern8
     start logd
+    write /sys/class/leds/red/brightness 255
+    write /sys/class/leds/green/brightness 255
+    write /sys/class/leds/blue/brightness 0
 
 on early-fs
     start vold
@@ -104,6 +110,10 @@ on post-fs-data
     mkdir /vendor/data/tombstones 0771 system system
     # Enable WLAN cold boot calibration
     write /sys/kernel/cnss/fs_ready 1
+    write /sys/class/leds/red/brightness 0
+    write /sys/class/leds/green/brightness 255
+    write /sys/class/leds/blue/brightness 0
+
 
 on early-boot
     setprop ro.surface_flinger.supports_background_blur ${vendor.display.supports_background_blur}
@@ -117,6 +127,10 @@ on boot
     chmod 0660 /sys/devices/platform/soc/990000.spi/spi_master/spi0/spi0.0/trusted_touch_enable
     chown system /sys/devices/system/cpu/hyp_core_ctl/enable
     chown system /sys/devices/system/cpu/hyp_core_ctl/hcc_min_freq
+
+    write /sys/class/leds/red/brightness 0
+    write /sys/class/leds/green/brightness 0
+    write /sys/class/leds/blue/brightness 255
 
 on property:vendor.display.lcd_density=560
    setprop dalvik.vm.heapgrowthlimit 256m
